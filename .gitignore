@@ -1,0 +1,17 @@
+node_modules/
+
+# Build outputs
+src/output.css
+
+# Environment and system files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Debug and package-manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
