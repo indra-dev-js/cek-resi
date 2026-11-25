@@ -16,7 +16,6 @@
     --color-slate-200: oklch(92.9% 0.013 255.508);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
-    --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
@@ -24,7 +23,6 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-md: 28rem;
-    --container-lg: 32rem;
     --container-xl: 36rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
@@ -303,24 +301,12 @@
   .scrollbar-thin {
     scrollbar-width: thin;
   }
-  .scrollbar-thumb-gray-600 {
-    --tw-scrollbar-thumb: var(--color-gray-600);
-    scrollbar-color: var(--tw-scrollbar-thumb) var(--tw-scrollbar-track);
-  }
-  .scrollbar-thumb-gray-700 {
-    --tw-scrollbar-thumb: var(--color-gray-700);
-    scrollbar-color: var(--tw-scrollbar-thumb) var(--tw-scrollbar-track);
-  }
   .scrollbar-thumb-sky-700 {
     --tw-scrollbar-thumb: var(--color-sky-700);
     scrollbar-color: var(--tw-scrollbar-thumb) var(--tw-scrollbar-track);
   }
   .scrollbar-track-gray-800 {
     --tw-scrollbar-track: var(--color-gray-800);
-    scrollbar-color: var(--tw-scrollbar-thumb) var(--tw-scrollbar-track);
-  }
-  .scrollbar-track-gray-900 {
-    --tw-scrollbar-track: var(--color-gray-900);
     scrollbar-color: var(--tw-scrollbar-thumb) var(--tw-scrollbar-track);
   }
   .grid-cols-1 {
@@ -587,48 +573,16 @@
     }
   }
   @media (width >= 64rem) {
-    .lg\:mx-0 {
-      margin-inline: 0px;
-    }
     .lg\:mx-auto {
       margin-inline: auto;
-    }
-    .lg\:grid {
-      display: grid;
-    }
-    .lg\:grid-cols-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  @media (width >= 80rem) {
-    .xl\:mx-0 {
-      margin-inline: 0px;
-    }
-    .xl\:max-w-lg {
-      max-width: var(--container-lg);
     }
   }
   @media (width >= 96rem) {
     .\32 xl\:mx-0 {
       margin-inline: 0px;
     }
-    .\32 xl\:grid {
-      display: grid;
-    }
-    .\32 xl\:max-w-full {
-      max-width: 100%;
-    }
-    .\32 xl\:max-w-lg {
-      max-width: var(--container-lg);
-    }
-    .\32 xl\:max-w-screen {
-      max-width: 100vw;
-    }
     .\32 xl\:max-w-xl {
       max-width: var(--container-xl);
-    }
-    .\32 xl\:grid-cols-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 }
