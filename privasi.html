@@ -49,147 +49,164 @@
             </button>
           </div>
         </div>
-      <div class="w-full min-h-0 flex flex-col overflow-auto scrollbar-thumb-sky-700 scrollbar-track-gray-800 scrollbar-thin flex-1 bg-gray-950 bg-[radial-gradient(ellipse_80%_40%_at_50%_0%,rgba(14,165,233,0.12),transparent)]">
+      <div class="w-full min-h-0 flex flex-col overflow-auto scrollbar-thumb-sky-700 scrollbar-track-gray-800 scrollbar-thin flex-1 bg-gray-950 bg-[radial-gradient(ellipse_80%_40%_at_50%_0%,rgba(14,165,233,0.12),transparent)] scroll-smooth">
         <div
           class="flex-1 px-3"
         >
           <div class="flex  flex-col max-w-md 2xl:max-w-xl mx-auto lg:mx-auto 2xl:mx-0 mt-10 space-y-4 ">
-            <div class="text-center space-y-2">
-              <h1
-                class="text-2xl md:text-3xl font-bold tracking-tight text-white"
-              >
-                Lacak Pengiriman Anda
-              </h1>
-              <p class="text-sm text-gray-400">
-                Pantau posisi paket secara real-time dengan memasukkan nomor
-                resi atau AWB di bawah ini.
-              </p>
-            </div>
-
-            <div class="w-full  mx-auto mt-6 ">
-              <div class="relative rounded-lg p-2 overflow-hidden ">
-                <div
-                  class="absolute inset-y-0 right-2 flex items-center pr-3 pointer-events-none"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6 text-gray-500"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                    />
-                  </svg>
+            <section class="mx-auto max-w-3xl px-2 py-10 text-gray-300 sm:px-6 ">
+              <!-- Header -->
+              <div class="mb-8 border-b border-gray-800 pb-6">
+                <span class="inline-flex items-center gap-2 rounded-full border border-sky-500/20 bg-sky-500/10 px-3 py-1 text-xs font-medium text-sky-400">
+                  <span class="h-1.5 w-1.5 rounded-full bg-sky-400"></span>
+                  Dokumen Legal
+                </span>
+                <h1 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                  Kebijakan <span class="text-sky-400">Privasi</span>
+                </h1>
+                <p class="mt-2 text-sm text-gray-400">
+                  Terakhir diperbarui: <span class="font-medium text-gray-200">25 November 2026</span>
+                </p>
+                <p class="mt-4 leading-relaxed text-gray-300">
+                  Selamat datang di layanan Cek Resi. Privasi Anda sangat penting bagi kami. Dokumen Kebijakan Privasi ini menjelaskan bagaimana informasi dikumpulkan, digunakan, dan dilindungi saat Anda mengakses serta menggunakan situs web ini.
+                </p>
+              </div>
+            
+              <!-- Daftar Bagian -->
+              <div class="space-y-6">
+                <!-- 1 -->
+                <div class="rounded-2xl border border-gray-800/80 bg-gray-900/60 p-6 transition hover:border-sky-500/30">
+                  <h2 class="mb-4 flex items-center gap-3 text-lg font-semibold text-white">
+                    <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-sky-500/10 text-sm font-bold text-sky-400 ring-1 ring-inset ring-sky-500/25">1</span>
+                    Informasi yang Kami Kumpulkan
+                  </h2>
+                  <div class="space-y-3 leading-relaxed">
+                    <p>
+                      Saat Anda menggunakan fitur pelacakan paket di situs kami, kami memproses beberapa data berikut untuk menjalankan layanan:
+                    </p>
+                    <p class="border-l-2 border-sky-500/50 pl-4">
+                      <strong class="font-medium text-sky-300">Nomor Resi & Pilihan Ekspedisi:</strong> Informasi yang Anda masukkan secara langsung ke dalam formulir pelacakan untuk mencari status pengiriman paket.
+                    </p>
+                    <p class="border-l-2 border-sky-500/50 pl-4">
+                      <strong class="font-medium text-sky-300">Data Teknis & Log:</strong> Informasi standar seperti alamat IP, jenis peramban (<em>browser</em>), perangkat yang digunakan, serta waktu akses untuk keperluan analisis performa dan keamanan situs.
+                    </p>
+                    <p class="border-l-2 border-sky-500/50 pl-4">
+                      <strong class="font-medium text-sky-300">Penyimpanan Lokal (Local Storage / Cookies):</strong> Situs ini dapat menyimpan riwayat pencarian nomor resi secara lokal di peramban perangkat Anda untuk memudahkan pelacakan ulang.
+                    </p>
+                  </div>
                 </div>
-                <input
-                  spellcheck="false"
-                  autocorrect="off"
-                  autocomplete="off"
-                  autype="text"
-                  class="text-base bg-gray-800 w-full pl-3 pr-10 py-2 text-slate-200 placeholder:text-gray-400 focus:outline-0 placeholder:font-medium focus:ring-2 focus:ring-sky-500 rounded  shadow-lg"
-                  placeholder="Nomor Resi atau AWB"
-                />
-                <!-- required default hidden -->
-                 <span class="text-red-500 text-sm hidden">* Nomor resi wajib diisi</span>
+            
+                <!-- 2 -->
+                <div class="rounded-2xl border border-gray-800/80 bg-gray-900/60 p-6 transition hover:border-sky-500/30">
+                  <h2 class="mb-4 flex items-center gap-3 text-lg font-semibold text-white">
+                    <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-sky-500/10 text-sm font-bold text-sky-400 ring-1 ring-inset ring-sky-500/25">2</span>
+                    Penggunaan Informasi
+                  </h2>
+                  <div class="space-y-3 leading-relaxed">
+                    <p>
+                      Informasi yang diproses digunakan semata-mata untuk mendukung operasional situs web ini:
+                    </p>
+                    <p class="border-l-2 border-sky-500/50 pl-4">
+                      Mengambil dan menampilkan status pelacakan pengiriman dari penyedia jasa ekspedisi terkait secara akurat.
+                    </p>
+                    <p class="border-l-2 border-sky-500/50 pl-4">
+                      Meningkatkan kecepatan, stabilitas tampilan, dan pengalaman pengguna pada situs web.
+                    </p>
+                    <p class="border-l-2 border-sky-500/50 pl-4">
+                      Menjaga keamanan sistem serta mencegah penyalahgunaan layanan seperti permintaan otomatis berlebihan atau <em>spam</em>.
+                    </p>
+                  </div>
+                </div>
+            
+                <!-- 3 -->
+                <div class="rounded-2xl border border-gray-800/80 bg-gray-900/60 p-6 transition hover:border-sky-500/30">
+                  <h2 class="mb-4 flex items-center gap-3 text-lg font-semibold text-white">
+                    <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-sky-500/10 text-sm font-bold text-sky-400 ring-1 ring-inset ring-sky-500/25">3</span>
+                    Pihak Ketiga dan Layanan Eksternal
+                  </h2>
+                  <div class="space-y-3 leading-relaxed">
+                    <p class="border-l-2 border-sky-500/50 pl-4">
+                      <strong class="font-medium text-sky-300">Penyedia Data Ekspedisi:</strong> Nomor resi yang Anda masukkan diteruskan ke sistem atau API pihak ketiga maupun ekspedisi terkait untuk mendapatkan status pengiriman terbaru.
+                    </p>
+                    <p class="border-l-2 border-sky-500/50 pl-4">
+                      <strong class="font-medium text-sky-300">Iklan dan Analitik:</strong> Situs ini dapat menggunakan layanan pihak ketiga seperti Google Analytics atau Google AdSense yang memakai <em>cookie</em> untuk menayangkan iklan yang relevan dan menganalisis trafik pengunjung. Anda dapat mengatur preferensi <em>cookie</em> melalui pengaturan peramban Anda.
+                    </p>
+                  </div>
+                </div>
+            
+                <!-- 4 -->
+                <div class="rounded-2xl border border-gray-800/80 bg-gray-900/60 p-6 transition hover:border-sky-500/30">
+                  <h2 class="mb-4 flex items-center gap-3 text-lg font-semibold text-white">
+                    <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-sky-500/10 text-sm font-bold text-sky-400 ring-1 ring-inset ring-sky-500/25">4</span>
+                    Keamanan dan Penyimpanan Data
+                  </h2>
+                  <div class="space-y-3 leading-relaxed">
+                    <p>
+                      Kami tidak menjual, menyewakan, atau membagikan data nomor resi Anda kepada pihak lain untuk tujuan pemasaran maupun komersial.
+                    </p>
+                    <p>
+                      Riwayat resi yang tersimpan melalui fitur <em>Local Storage</em> berada sepenuhnya di perangkat Anda dan dapat Anda hapus kapan saja dengan membersihkan data peramban (<em>clear browser data</em>).
+                    </p>
+                  </div>
+                </div>
+            
+                <!-- 5 -->
+                <div class="rounded-2xl border border-gray-800/80 bg-gray-900/60 p-6 transition hover:border-sky-500/30">
+                  <h2 class="mb-4 flex items-center gap-3 text-lg font-semibold text-white">
+                    <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-sky-500/10 text-sm font-bold text-sky-400 ring-1 ring-inset ring-sky-500/25">5</span>
+                    Penafian (Disclaimer)
+                  </h2>
+                  <div class="space-y-3 leading-relaxed">
+                    <p>
+                      Situs ini merupakan alat bantu pelacakan informasi pengiriman dan bukan merupakan bagian resmi dari perusahaan ekspedisi mana pun, kecuali dinyatakan secara tertulis.
+                    </p>
+                    <p>
+                      Akurasi status dan waktu pengiriman bergantung sepenuhnya pada pembaruan data dari masing-masing penyedia jasa ekspedisi.
+                    </p>
+                  </div>
+                </div>
+            
+                <!-- 6 -->
+                <div class="rounded-2xl border border-gray-800/80 bg-gray-900/60 p-6 transition hover:border-sky-500/30">
+                  <h2 class="mb-4 flex items-center gap-3 text-lg font-semibold text-white">
+                    <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-sky-500/10 text-sm font-bold text-sky-400 ring-1 ring-inset ring-sky-500/25">6</span>
+                    Perubahan Kebijakan Privasi
+                  </h2>
+                  <div class="space-y-3 leading-relaxed">
+                    <p>
+                      Kami berhak memperbarui Kebijakan Privasi ini sewaktu-waktu. Setiap perubahan akan langsung ditampilkan pada halaman ini beserta tanggal pembaruan terbarunya.
+                    </p>
+                  </div>
+                </div>
+            
+                <!-- 7 -->
+                <div class="rounded-2xl border border-sky-500/25 bg-linear-to-br from-gray-900/90 to-sky-950/25 p-6">
+                  <h2 class="mb-4 flex items-center gap-3 text-lg font-semibold text-white">
+                    <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-sky-500/15 text-sm font-bold text-sky-400 ring-1 ring-inset ring-sky-500/30">7</span>
+                    Hubungi Kami
+                  </h2>
+                  <div class="space-y-3 leading-relaxed">
+                    <p>
+                      Jika Anda memiliki pertanyaan, masukan, atau permintaan terkait Kebijakan Privasi ini, silakan hubungi kami melalui kontak berikut:
+                    </p>
+                    <p>
+                      Email: <a href="mailto:alamat-email@domainanda.com" class="font-medium text-sky-400 underline decoration-sky-500/40 underline-offset-4 transition hover:text-sky-300">alamat-email@domainanda.com</a>
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="flex flex-col items-center justify-center">
-                <!-- pilih expedisi -->
-                 <div class="w-full mt-3">
-                  <h2 class="text-lg font-semibold text-white">Pilih Expedisi</h2>
-                  <div class="mt-2 flex flex-wrap gap-2" translate="no">
-                    <button
-                      class="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-opacity-75"
-                    >
-                      J&T Express
-                    </button>
-                    <button
-                      class="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-opacity-75"
-                    >
-                      J&T Cargo
-                    </button>
-                    <button
-                      class="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-opacity-75"
-                    >
-                      JNE
-                    </button>
-                    <button
-                      class="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-opacity-75"
-                    >
-                      TIKI
-                    </button>
-                    <button
-                      class="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-opacity-75"
-                    >
-                      POS Indonesia
-                    </button>
-                 </div>
-
-                 
-                <button
-                  class="w-full mt-3 py-2 px-4 bg-sky-600 hover:bg-sky-700 text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-opacity-75 cursor-pointer "
-                >
-                  Lacak
-                </button>
-              </div>
-            </div>
-<!-- table tracking -->
- <!-- table dengan 2 col tanggal dan keterangan -->
-        <div class="mt-6">
-          <h2 class="text-lg font-semibold text-white">Riwayat Tracking</h2>
-          <!-- falback -->
-          <div class="mt-2 text-sm text-gray-400 hidden">
-            <p>Masukkan nomor resi dan pilih kurir untuk melihat riwayat tracking.</p>
-          </div>
-          <div class="my-2 overflow-x-auto rounded-lg">
-            <table class="w-full text-sm text-left text-gray-400">
-              <thead class="text-xs uppercase bg-gray-800 text-gray-400">
-                <tr>
-                  <th scope="col" class="px-6 py-3">Tanggal</th>
-                  <th scope="col" class="px-6 py-3">Keterangan</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="bg-gray-900 border-b border-gray-700">
-                  <td class="px-6 py-4">2024-06-01 10:00</td>
-                  <td class="px-6 py-4">Paket diterima di gudang</td>
-                </tr>
-                <tr class="bg-gray-900 border-b border-gray-700">
-                  <td class="px-6 py-4">2024-06-02 14:30</td>
-                  <td class="px-6 py-4">Paket dalam perjalanan ke kota tujuan</td>
-                </tr>
-                <tr class="bg-gray-900 border-b border-gray-700">
-                  <td class="px-6 py-4">2024-06-03 09:15</td>
-                  <td class="px-6 py-4">Paket tiba di kota tujuan</td>
-                </tr>
-                <tr class="bg-gray-900 border-b border-gray-700">
-                  <td class="px-6 py-4">2024-06-04 16:45</td>
-                  <td class="px-6 py-4">Paket sedang dalam proses pengiriman ke alamat penerima</td>
-                </tr>
-                <tr class="bg-gray-900 border-b border-gray-700">
-                  <td class="px-6 py-4">2024-06-05 11:20</td>
-                  <td class="px-6 py-4">Paket berhasil dikirim ke penerima</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-          </div>
+            </section>
+              
         </div>
 
 
       </div>
       <footer class="w-full border-t border-gray-900 bg-gray-900/50 backdrop-blur  mt-auto">
-        <div class="max-w-md mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
+        <div class="max-w-md mx-auto 2xl:mx-0 px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
           <p>&copy; 2026 Lacak Paket. Semua hak dilindungi undang-undang.</p>
           <nav class="flex items-center gap-4" aria-label="Tautan footer">
             <a href="#" class="hover:text-sky-400 transition-colors">Bantuan</a>
-            <a href="#" class="hover:text-sky-400 transition-colors">Privasi</a>
+            <a href="/privasi.html" class="hover:text-sky-400 transition-colors">Privasi</a>
             <a href="#" class="hover:text-sky-400 transition-colors">Syarat</a>
           </nav>
         </div>
