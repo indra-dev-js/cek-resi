@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body class="bg-gray-950 text-white h-inherit">
-    <div class="min-h-dvh grid grid-cols-1 md:grid-cols-[auto_1fr] overflow-hidden">
-      <div class="min-w-72 border-r border-r-gray-900 hidden md:block" id="sidebar">
+    <div class="min-h-dvh grid grid-cols-1 lg:grid-cols-[auto_1fr] overflow-hidden">
+      <div class="min-w-72 border-r border-r-gray-900 hidden md:hidden lg:block" id="sidebar">
         <!-- Sidebar content -->
 
         <!-- brand logo or text style italic dan font  -->
@@ -30,7 +30,7 @@
           class="w-full min-h-14 border-b border-b-gray-900 flex items-center"
         >
           <div class="flex-none pl-3">
-            <button aria-label="toggler"              class="flex items-center justify-center cursor-pointer"
+            <button aria-label="toggler"              class="flex items-center justify-center cursor-pointer md:hidden"
               name="toggler"
             >
               <svg
@@ -48,8 +48,27 @@
               </svg>
             </button>
           </div>
+
+          <div id="navContentRight" class="flex items-center ml-auto pr-2 md:pr-6  ">
+            <div>
+              <button class="border border-transparent rounded-xl transition text-gray-600 p-2 content-center text-center cursor-pointer hover:bg-gray-800/50 hover:border-gray-800 hover:text-gray-400" aria-label="theme">
+                <svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z"/></svg>
+              </button>
+              <button class="relative border border-transparent rounded-xl transition text-gray-600 p-2 content-center text-center cursor-pointer hover:bg-gray-800/50 hover:border-gray-800 hover:text-gray-400 hover:*:not-first:bg-green-400" aria-label="notif">
+                <svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"/><path fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z"/></svg>
+                <span class="absolute size-1.5 bg-green-500 top-2 right-2 rounded-full"></span>
+              </button>
+            </div>
+            <div class="h-6 w-px bg-gray-900 mx-2"></div>
+            <div class="border border-transparent  rounded-xl flex items-center justify-center gap-2 py-1.5 px-2 hover:bg-gray-800/50 hover:border-gray-800 transition cursor-pointer ">
+              <div class="rounded-full size-8 text-center content-center bg-sky-700">I</div>
+              <div class="hidden md:block">Indra (Indra)</div>
+              <div class="text-gray-600 "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4"><path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"/></svg></div>
+            </div>
+          </div>
         </div>
-      <div class="w-full min-h-0 flex flex-col overflow-auto scrollbar-thumb-sky-700 scrollbar-track-gray-800 scrollbar-thin flex-1 bg-gray-950 bg-[radial-gradient(ellipse_80%_40%_at_50%_0%,rgba(14,165,233,0.12),transparent)]">
+      <div class="w-full min-h-0 flex flex-col overflow-auto scrollbar-thumb-gray-500 scrollbar-track-gray-800 scrollbar-thin flex-1 bg-gray-950 
+      bg-[image:radial-gradient(ellipse_80%_40%_at_50%_0%,rgba(14,165,233,0.12),transparent),url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20d%3D%22M40%200H0V40%22%20stroke%3D%22%2338bdf8%22%20stroke-opacity%3D%220.08%22%20stroke-width%3D%221%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E')] bg-size-[100%_100%,40px_40px]">
         <div
           class="flex-1 px-3"
         >
@@ -102,7 +121,7 @@
               <span class="text-red-500 text-sm hidden">* Nomor resi wajib diisi</span>
               <div class="flex flex-col items-center justify-center">
                 <!-- pilih expedisi -->
-                 <div class="w-full mt-8">
+                 <div class="w-full mt-6">
                   <h2 class="text-lg font-semibold text-white">Pilih Expedisi</h2>
                   <div class="mt-2 flex flex-wrap gap-2" translate="no">
                     <button
@@ -144,13 +163,13 @@
         </div>
 <!-- table tracking -->
  <!-- table dengan 2 col tanggal dan keterangan -->
-        <div class="mt-6">
+        <div class="my-6 ">
           <h2 class="text-lg font-semibold text-white">Riwayat Tracking</h2>
           <!-- falback -->
-          <div class="mt-2 text-sm text-gray-400 hidden">
-            <p>Masukkan nomor resi dan pilih kurir untuk melihat riwayat tracking.</p>
+          <div class="mt-2 text-sm text-sky-300 bg-sky-950 p-4 rounded-lg border border-sky-500">
+            <p>Masukkan nomor resi dan pilih kurir untuk melihat riwayat tracking disini.</p>
           </div>
-          <div class="my-2 overflow-x-auto rounded-lg border border-gray-800 bg-gray-900 mb-8">
+          <div class="my-2 overflow-x-auto rounded-lg border border-gray-800 bg-gray-900 mb-8 hidden">
             <table class="w-full text-sm text-left text-gray-400  ">
               <thead class="text-xs uppercase bg-gray-800 text-gray-400">
                 <tr>
@@ -206,9 +225,7 @@
       id="backToTopBtn"
       class="fixed bottom-4 right-4 p-3 bg-sky-600 hover:bg-sky-700 text-white rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-opacity-75  "
     >
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
-      </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="size-6" fill="white"><path fill-rule="evenodd" d="M14.064 0a8.75 8.75 0 00-6.187 2.563l-.459.458c-.314.314-.616.641-.904.979H3.31a1.75 1.75 0 00-1.49.833L.11 7.607a.75.75 0 00.418 1.11l3.102.954c.037.051.079.1.124.145l2.429 2.428c.046.046.094.088.145.125l.954 3.102a.75.75 0 001.11.418l2.774-1.707a1.75 1.75 0 00.833-1.49V9.485c.338-.288.665-.59.979-.904l.458-.459A8.75 8.75 0 0016 1.936V1.75A1.75 1.75 0 0014.25 0h-.186zM10.5 10.625c-.088.06-.177.118-.266.175l-2.35 1.521.548 1.783 1.949-1.2a.25.25 0 00.119-.213v-2.066zM3.678 8.116L5.2 5.766c.058-.09.117-.178.176-.266H3.309a.25.25 0 00-.213.119l-1.2 1.95 1.782.547zm5.26-4.493A7.25 7.25 0 0114.063 1.5h.186a.25.25 0 01.25.25v.186a7.25 7.25 0 01-2.123 5.127l-.459.458a15.21 15.21 0 01-2.499 2.02l-2.317 1.5-2.143-2.143 1.5-2.317a15.25 15.25 0 012.02-2.5l.458-.458h.002zM12 5a1 1 0 11-2 0 1 1 0 012 0zm-8.44 9.56a1.5 1.5 0 10-2.12-2.12c-.734.73-1.047 2.332-1.15 3.003a.23.23 0 00.265.265c.671-.103 2.273-.416 3.005-1.148z"/></svg>
     </button>
     <script type="module" src="src/js/main.js"></script>
   </body>
